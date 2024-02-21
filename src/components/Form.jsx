@@ -15,7 +15,7 @@ const Form = () => {
 
   return (
     <div className="">
-      <form>
+      <form onSubmit={(e) => e.preventDefault()}>
         {isLogin && (
           <div className="">
             <label
