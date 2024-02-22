@@ -24,8 +24,8 @@ const LoginForm = () => {
 
   return (
     <>
-      <div className="flex h-full w-full">
-        <div className="w-1/2 hidden md:block h-screen">
+      <div className="flex h-screen">
+        <div className="md:w-1/2 hidden md:block ">
           <img
             className="w-full h-full  "
             src="https://img.freepik.com/premium-photo/starry-night-lake_68067-800.jpg"
@@ -33,8 +33,8 @@ const LoginForm = () => {
           />
         </div>
         <div className="md:w-1/2 relative flex flex-col  content-center  gap-5 mx-auto px-2 ">
-          <div className="">
-            <div className="w-2/3 md:justify-center md:items-center mx-auto pt-4">
+          <div className="h-1/1">
+            <div className="w-2/3 md:justify-center md:items-center md:mx-auto pt-4">
               <img
                 className="h-9 w-9 md:mx-auto"
                 src="https://pinntag.com/wp-content/uploads/2023/08/Untitled-design-9.png"
@@ -47,11 +47,12 @@ const LoginForm = () => {
                 <IoMdArrowBack />
               </button>
             </div>
-            <div className="flex"></div>
-            <Header />
           </div>
 
-          <div className="md:w-2/3 h-4/6 mx-auto ">{section}</div>
+          <div className="md:w-2/3 h-4/6 md:mx-auto ">
+            <Header />
+            {section}
+          </div>
 
           <div className="sticky py-4 text-center my-auto flex md:flex-row flex-col justify-evenly  text-sm   ">
             <p className="text-sm">©️2024 Pinntag.All rights reserved</p>
