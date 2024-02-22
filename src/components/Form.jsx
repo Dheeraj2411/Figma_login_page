@@ -15,9 +15,9 @@ const Form = () => {
 
   return (
     <div className="">
-      <form onSubmit={(e) => e.preventDefault()} className="relative">
+      <form onSubmit={(e) => e.preventDefault()} className="relative ">
         {isLogin && (
-          <div className="mb-2.5">
+          <div className="mb-4">
             <label
               htmlFor="name"
               className=" absolute -top-2 left-1 text-xs px-0.5 font-medium  bg-white text-gray-900
@@ -34,7 +34,7 @@ const Form = () => {
             />
           </div>
         )}
-        <div className={`relative ${!isLogin ? "mt-7" : " mb-2.5"} `}>
+        <div className={`relative ${!isLogin ? "mt-7" : " mb-4"} `}>
           <label
             htmlFor="email"
             className="absolute -top-2  left-2  text-xs px-0.5  font-medium  bg-white text-gray-900 "
@@ -49,7 +49,7 @@ const Form = () => {
             required
           />
         </div>
-        <div className={`relative ${!isLogin ? "my-8 " : " mb-2.5"} `}>
+        <div className={`relative ${!isLogin ? "my-8 " : " mb-4"} `}>
           <label
             htmlFor="password"
             className="absolute -top-2 left-1 rounded-lg   text-xs px-0.5 font-medium  bg-white text-gray-900"
@@ -71,7 +71,7 @@ const Form = () => {
           </button>
         </div>
         {isLogin && (
-          <div className="mb-2.5 relative">
+          <div className="mb-4 relative">
             <label
               htmlFor="repeat_password"
               className="absolute -top-2 left-1 text-xs  font-medium bg-opacity-90 bg-white  px-0.5 text-gray-900 "

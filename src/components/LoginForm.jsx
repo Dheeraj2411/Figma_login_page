@@ -24,15 +24,14 @@ const LoginForm = () => {
 
   return (
     <>
-      <div className="flex h-screen">
-        <div className="md:w-1/2 hidden md:block ">
-          <img
-            className="w-full h-full  "
-            src="https://img.freepik.com/premium-photo/starry-night-lake_68067-800.jpg"
-            alt="img-logo"
-          />
-        </div>
-        <div className="md:w-1/2 relative flex flex-col  content-center  gap-5 mx-auto px-2 ">
+      <div className=" flex h-screen">
+        <img
+          className="lg:w-1/2 w-full md:h-auto h-64 hidden lg:block object-cover object-center rounded"
+          src="https://img.freepik.com/premium-photo/starry-night-lake_68067-800.jpg"
+          alt="img-logo"
+        />
+
+        <div className="lg:w-1/2  relative flex flex-col  content-center md:gap-10 gap-5 mx-auto px-2 ">
           <div className="h-1/1">
             <div className="w-2/3 md:justify-center md:items-center md:mx-auto pt-4">
               <img
@@ -49,7 +48,7 @@ const LoginForm = () => {
             </div>
           </div>
 
-          <div className="md:w-2/3 h-4/6 md:mx-auto ">
+          <div className="md:w-2/3  h-4/6 mx-auto ">
             <Header />
             {section}
           </div>

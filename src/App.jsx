@@ -2,7 +2,6 @@ import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 
 import LoginForm from "./components/LoginForm";
-// import Testing from "./Testing";
 
 function App() {
   return (
@@ -10,7 +9,6 @@ function App() {
       <BrowserRouter>
         <LoginForm />
       </BrowserRouter>
-      {/* <Testing /> */}
     </>
   );
 }

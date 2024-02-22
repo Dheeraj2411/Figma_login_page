@@ -1,15 +1,15 @@
 const Header = () => {
   return (
     <div>
-      <div className=" text-pretty   ">
+      <div className="container   ">
         <h1
-          className=" font-semibold text-2xl leading-7  ;
+          className=" font-bold text-balance text-3xl leading-7  ;
 "
         >
           Register for a PinnaTag account for your business
         </h1>
         <p
-          className="text-xs  py-2 text-#6C7278;
+          className="text-xs  my-4 text-#6C7278;
 "
         >
           Lets login into your Pinntag Buniess account first
