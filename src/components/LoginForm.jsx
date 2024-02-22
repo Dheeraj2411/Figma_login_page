@@ -54,13 +54,13 @@ const LoginForm = () => {
             {section}
           </div>
 
-          <div className="sticky py-4 text-center my-auto flex md:flex-row flex-col justify-evenly  text-sm   ">
+          <div className="sticky text-pretty py-4 text-center my-auto flex md:flex-row flex-col justify-evenly  text-sm   ">
             <p className="text-sm">©️2024 Pinntag.All rights reserved</p>
             <div className="text-sky-400 ">
               <button onClick={() => setCurrentSection(3)}>
                 Term & Condition
               </button>
-              <span className="text-black mx-2">|</span>
+              <span className="text-black md:mx-2 mx-6">|</span>
               <button onClick={() => setCurrentSection(2)}>
                 Privacy & Policy
               </button>

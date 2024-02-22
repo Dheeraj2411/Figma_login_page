@@ -103,7 +103,7 @@ const Form = () => {
           </button>
         </div>
       </form>
-      <p className="text-sm text-center mt-4">
+      <p className="text-sm text-center mt-4 pl-2">
         {isLogin ? "Already have an account ? " : "Don't  have  an account ? "}
         <span
           onClick={() => setisLogin((prev) => !prev)}
