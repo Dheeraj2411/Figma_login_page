@@ -71,7 +71,7 @@ const Form = () => {
           </button>
         </div>
         {isLogin && (
-          <div className="mb-[4vh] relative">
+          <div className="md:mb-[4vh] mb-2 relative">
             <label
               htmlFor="repeat_password"
               className="absolute -top-2 left-1 text-xs  font-medium bg-opacity-90 bg-white  px-0.5 text-gray-900 "
@@ -103,7 +103,7 @@ const Form = () => {
           </button>
         </div>
       </form>
-      <p className="text-sm text-center mt-[4vh] pl-2">
+      <p className="text-sm text-center md:mt-[4vh] mt-2 pl-2">
         {isLogin ? "Already have an account ? " : "Don't  have  an account ? "}
         <span
           onClick={() => setisLogin((prev) => !prev)}
