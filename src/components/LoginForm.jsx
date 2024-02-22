@@ -31,7 +31,7 @@ const LoginForm = () => {
           alt="img-logo"
         />
 
-        <div className="lg:w-1/2  relative flex flex-col  content-center md:gap-10 gap-5 mx-auto px-2 ">
+        <div className="container lg:w-1/2 md:w-4/5 md:mt-44 text-xl lg:mt-0  relative flex flex-col  content-center md:gap-10 gap-5 mx-auto px-2 ">
           <div className="h-1/1">
             <div className="w-2/3 md:justify-center md:items-center md:mx-auto pt-4">
               <img
@@ -39,21 +39,21 @@ const LoginForm = () => {
                 src="https://pinntag.com/wp-content/uploads/2023/08/Untitled-design-9.png"
                 alt="logo"
               />
-              <button
-                className="content-center py-5 md:py-2"
-                onClick={() => setCurrentSection(1)}
-              >
-                <IoMdArrowBack />
-              </button>
             </div>
           </div>
 
-          <div className="md:w-2/3  h-4/6 mx-auto ">
+          <div className="lg:w-3/5  h-4/6 mx-auto ">
+            <button
+              className="lg:content-center md:my-5 lg:my-0 md:py-2"
+              onClick={() => setCurrentSection(1)}
+            >
+              <IoMdArrowBack />
+            </button>
             <Header />
             {section}
           </div>
 
-          <div className="sticky text-pretty py-4 text-center my-auto flex md:flex-row flex-col justify-evenly  text-sm   ">
+          <div className="sticky text-pretty py-4 text-center md:mt-0 lg:mt-auto my-auto flex md:flex-row flex-col justify-evenly  text-sm   ">
             <p className="text-sm">©️2024 Pinntag.All rights reserved</p>
             <div className="text-sky-400 ">
               <button onClick={() => setCurrentSection(3)}>

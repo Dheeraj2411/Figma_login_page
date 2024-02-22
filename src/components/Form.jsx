@@ -14,10 +14,10 @@ const Form = () => {
   };
 
   return (
-    <div className="">
+    <>
       <form onSubmit={(e) => e.preventDefault()} className="relative ">
         {isLogin && (
-          <div className="mb-4">
+          <div className="mb-[4vh]">
             <label
               htmlFor="name"
               className=" absolute -top-2 left-1 text-xs px-0.5 font-medium  bg-white text-gray-900
@@ -34,7 +34,7 @@ const Form = () => {
             />
           </div>
         )}
-        <div className={`relative ${!isLogin ? "mt-7" : " mb-4"} `}>
+        <div className={`relative ${!isLogin ? "mt-7" : " mb-[4vh]"} `}>
           <label
             htmlFor="email"
             className="absolute -top-2  left-2  text-xs px-0.5  font-medium  bg-white text-gray-900 "
@@ -49,7 +49,7 @@ const Form = () => {
             required
           />
         </div>
-        <div className={`relative ${!isLogin ? "my-8 " : " mb-4"} `}>
+        <div className={`relative ${!isLogin ? "my-8 " : " mb-[4vh]"} `}>
           <label
             htmlFor="password"
             className="absolute -top-2 left-1 rounded-lg   text-xs px-0.5 font-medium  bg-white text-gray-900"
@@ -71,7 +71,7 @@ const Form = () => {
           </button>
         </div>
         {isLogin && (
-          <div className="mb-4 relative">
+          <div className="mb-[4vh] relative">
             <label
               htmlFor="repeat_password"
               className="absolute -top-2 left-1 text-xs  font-medium bg-opacity-90 bg-white  px-0.5 text-gray-900 "
@@ -103,7 +103,7 @@ const Form = () => {
           </button>
         </div>
       </form>
-      <p className="text-sm text-center mt-4 pl-2">
+      <p className="text-sm text-center mt-[4vh] pl-2">
         {isLogin ? "Already have an account ? " : "Don't  have  an account ? "}
         <span
           onClick={() => setisLogin((prev) => !prev)}
@@ -112,7 +112,7 @@ const Form = () => {
           {isLogin ? "Login Here" : "Sign Up"}
         </span>
       </p>
-    </div>
+    </>
   );
 };
 
