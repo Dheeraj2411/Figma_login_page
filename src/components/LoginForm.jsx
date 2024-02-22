@@ -24,8 +24,8 @@ const LoginForm = () => {
 
   return (
     <>
-      <div className="flex h-screen">
-        <div className="md:w-1/2 hidden md:block ">
+      <div className="flex h-full w-full">
+        <div className="w-1/2 hidden md:block h-screen">
           <img
             className="w-full h-full  "
             src="https://img.freepik.com/premium-photo/starry-night-lake_68067-800.jpg"
