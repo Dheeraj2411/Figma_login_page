@@ -1,20 +1,18 @@
 const Header = () => {
   return (
-    <div>
-      <div className="container   ">
-        <h1
-          className=" font-bold text-balance text-3xl leading-7  ;
+    <div className="w-[416px] h-[118px] gap-3 flex flex-col mx-auto">
+      <h1
+        className="my-3 text-header-font text-3xl font-bold  leading-8 text-balance
 "
-        >
-          Register for a PinnaTag account for your business
-        </h1>
-        <p
-          className="text-xs  my-4 text-#6C7278;
+      >
+        Register for a PinnaTag account for your business
+      </h1>
+      <p
+        className="text-secondary-header text-sm leading-4  block
 "
-        >
-          Lets login into your Pinntag Buniess account first
-        </p>
-      </div>
+      >
+        Lets login into your Pinntag Buniess account first
+      </p>
     </div>
   );
 };
