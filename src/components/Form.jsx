@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { FaEyeSlash, FaEye } from "react-icons/fa";
+
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 
 const Form = () => {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
@@ -20,10 +21,10 @@ const Form = () => {
         className="mt-11 flex flex-col h-80 justify-evenly gap-[16px] "
       >
         {isLogin && (
-          <div className="relative w-[416px]">
+          <div className="relative w-[327px] md:w-[416px]">
             <label
               htmlFor="name"
-              className=" absolute -top-2 left-1 text-xs px-0.5 font-medium  bg-white text-label-text-color
+              className=" absolute -top-2 left-2 text-xs px-0.5 font-medium  bg-white text-label-text-color
  "
             >
               Your name
@@ -31,13 +32,13 @@ const Form = () => {
             <input
               type="text"
               id="name"
-              className="bg-white border border-input-border  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block h-14 w-full py-7 px-5"
+              className="bg-white border border-input-border placeholder-header-font text-gray-900 text-base font-semibold rounded-lg focus:ring-blue-500 focus:border-blue-500 block h-14 w-full py-7 px-5"
               placeholder="yourname"
               required
             />
           </div>
         )}
-        <div className="relative w-[416px] ">
+        <div className="relative w-[327px] md:w-[416px] ">
           <label
             htmlFor="email"
             className="absolute -top-2  left-2  text-xs px-0.5  font-medium  bg-white text-label-text-color "
@@ -47,37 +48,37 @@ const Form = () => {
           <input
             type="email"
             id="email"
-            className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full h-14 py-7 px-5"
-            placeholder="john.doe@company.com"
+            className="bg-white border border-gray-300 placeholder-header-font text-base font-semibold rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full h-14 py-7 px-5"
+            placeholder="youname@gmail.com"
             required
           />
         </div>
-        <div className="w-[416px] relative ">
+        <div className="w-[327px] md:w-[416px] relative ">
           <label
             htmlFor="password"
-            className="absolute -top-2 left-1 rounded-lg   text-xs px-0.5 font-medium  bg-white text-label-text-color"
+            className="absolute -top-2 left-2 rounded-lg   text-xs px-0.5 font-medium  bg-white text-label-text-color"
           >
             Password
           </label>
           <input
             type={isPasswordVisible ? "text" : "password"}
             id="password"
-            className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full py-7 px-5 h-14"
+            className="bg-white border border-gray-300 text-gray-900 placeholder-header-font text-base font-semibold rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full py-7 px-5 h-14"
             placeholder="*********"
             required
           />
           <button
             onClick={togglePasswordVisibility}
-            className="absolute  right-3 bottom-3 text-gray-600"
+            className="absolute h-6 w-6  right-3 bottom-5 text-gray-600"
           >
-            {isPasswordVisible ? <FaEye /> : <FaEyeSlash />}
+            {isPasswordVisible ? <AiOutlineEye /> : <AiOutlineEyeInvisible />}
           </button>
         </div>
         {isLogin && (
-          <div className="w-[416px] relative">
+          <div className="w-[327px] md:w-[416px] relative">
             <label
               htmlFor="repeat_password"
-              className="absolute -top-2 left-1 text-xs  font-medium bg-opacity-90 px-0.5 bg-white text-label-text-color"
+              className="absolute -top-2 left-2 text-xs  font-medium bg-opacity-90 px-0.5 bg-white text-label-text-color"
             >
               Repeat Password
             </label>
@@ -85,19 +86,23 @@ const Form = () => {
             <input
               type={isRepeatPasswordVisible ? "text" : "password"}
               id="repeat_password"
-              className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full py-7 px-5 h-14"
+              className="bg-white border border-gray-300 placeholder-header-font text-gray-900 text-base font-semibold rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full py-7 px-5 h-14"
               placeholder="*********"
               required
             />
             <button
               onClick={toggleRepeatPasswordVisibility}
-              className="absolute  right-3 bottom-3 text-gray-600"
+              className="absolute h-6 w-6 right-3 bottom-5 text-gray-600"
             >
-              {isRepeatPasswordVisible ? <FaEye /> : <FaEyeSlash />}
+              {isRepeatPasswordVisible ? (
+                <AiOutlineEye />
+              ) : (
+                <AiOutlineEyeInvisible />
+              )}
             </button>
           </div>
         )}
-        <div className="w-[416px]">
+        <div className="w-[327px] md:w-[416px]">
           <button
             type="submit"
             className="text-white bg-btncolor hover:bg-btncolor focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-3xl text-lg w-full font-bold px-5 py-2.5 text-center h-12 "
@@ -105,7 +110,7 @@ const Form = () => {
             Save
           </button>
         </div>
-        <p className="text-sm text-center mt-8 font-normal text-secondary-header">
+        <p className="text-sm text-center md:mt-8 mt-0 font-normal text-secondary-header">
           {isLogin
             ? "Already have an account ? "
             : "Don't  have  an account ? "}
