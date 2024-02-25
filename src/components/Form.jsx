@@ -18,7 +18,7 @@ const Form = () => {
     <div className="mx-auto">
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="md:mt-12 mt-8 flex flex-col h-80 justify-evenly gap-[1rem] "
+        className="md:mt-12 mt-10 flex flex-col h-80 justify-evenly gap-[1rem] "
       >
         {isLogin && (
           <div className="relative w-[20.5rem] md:w-[26rem]">
