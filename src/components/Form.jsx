@@ -18,13 +18,13 @@ const Form = () => {
     <div className="mx-auto">
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="mt-11 flex flex-col h-80 justify-evenly gap-[16px] "
+        className="md:mt-12 mt-8 flex flex-col h-80 justify-evenly gap-[1rem] "
       >
         {isLogin && (
-          <div className="relative w-[327px] md:w-[416px]">
+          <div className="relative w-[20.5rem] md:w-[26rem]">
             <label
               htmlFor="name"
-              className=" absolute -top-2 left-2 text-xs px-0.5 font-medium  bg-white text-label-text-color
+              className=" absolute -top-2 left-3 text-xs px-2 font-medium  bg-white text-label-text-color
  "
             >
               Your name
@@ -38,10 +38,10 @@ const Form = () => {
             />
           </div>
         )}
-        <div className="relative w-[327px] md:w-[416px] ">
+        <div className="relative w-[20.5rem] md:w-[26rem] ">
           <label
             htmlFor="email"
-            className="absolute -top-2  left-2  text-xs px-0.5  font-medium  bg-white text-label-text-color "
+            className="absolute -top-2  left-2  text-xs px-2  font-medium  bg-white text-label-text-color "
           >
             Email
           </label>
@@ -53,10 +53,10 @@ const Form = () => {
             required
           />
         </div>
-        <div className="w-[327px] md:w-[416px] relative ">
+        <div className="w-[20.5rem] md:w-[26rem] relative ">
           <label
             htmlFor="password"
-            className="absolute -top-2 left-2 rounded-lg   text-xs px-0.5 font-medium  bg-white text-label-text-color"
+            className="absolute -top-2 left-2 rounded-lg   text-xs px-2 font-medium  bg-white text-label-text-color"
           >
             Password
           </label>
@@ -69,16 +69,16 @@ const Form = () => {
           />
           <button
             onClick={togglePasswordVisibility}
-            className="absolute h-6 w-6  right-3 bottom-5 text-gray-600"
+            className="absolute  right-3 text-2xl  bottom-5 text-gray-600"
           >
             {isPasswordVisible ? <AiOutlineEye /> : <AiOutlineEyeInvisible />}
           </button>
         </div>
         {isLogin && (
-          <div className="w-[327px] md:w-[416px] relative">
+          <div className="w-[20.5rem] md:w-[26rem] relative">
             <label
               htmlFor="repeat_password"
-              className="absolute -top-2 left-2 text-xs  font-medium bg-opacity-90 px-0.5 bg-white text-label-text-color"
+              className="absolute -top-2 left-2 text-xs  font-medium bg-opacity-90 px-2 bg-white text-label-text-color"
             >
               Repeat Password
             </label>
@@ -92,7 +92,7 @@ const Form = () => {
             />
             <button
               onClick={toggleRepeatPasswordVisibility}
-              className="absolute h-6 w-6 right-3 bottom-5 text-gray-600"
+              className="absolute  text-2xl right-3 bottom-5 text-gray-600"
             >
               {isRepeatPasswordVisible ? (
                 <AiOutlineEye />
@@ -102,7 +102,7 @@ const Form = () => {
             </button>
           </div>
         )}
-        <div className="w-[327px] md:w-[416px]">
+        <div className="w-[20.5rem] md:w-[26rem]">
           <button
             type="submit"
             className="text-white bg-btncolor hover:bg-btncolor focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-3xl text-lg w-full font-bold px-5 py-2.5 text-center h-12 "
@@ -110,7 +110,7 @@ const Form = () => {
             Save
           </button>
         </div>
-        <p className="text-sm text-center md:mt-8 mt-0 font-normal text-secondary-header">
+        <p className="text-sm text-center md:mt-4 mt-0 font-normal text-secondary-header">
           {isLogin
             ? "Already have an account ? "
             : "Don't  have  an account ? "}

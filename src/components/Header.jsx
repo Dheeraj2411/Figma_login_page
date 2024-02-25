@@ -1,8 +1,8 @@
 const Header = () => {
   return (
-    <div className="md:w-[416px] w-[327px] md:h-[118px] h-[160px] gap-3 flex flex-col mx-auto">
+    <div className="md:w-[416px] w-[327px] md:h-[118px] h-[160px]  gap-3 flex flex-col mx-auto">
       <h1
-        className="my-3 text-header-font text-3xl font-bold  leading-8 text-balance
+        className="my-2 text-header-font text-[2rem] font-bold  leading-9 text-balance
 "
       >
         Register for a PinnaTag account for your business

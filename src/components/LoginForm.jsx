@@ -26,7 +26,7 @@ const LoginForm = () => {
 
   return (
     <>
-      <div className="md:h-[1024px] h-[848px]     flex ">
+      <div className="md:h-[64rem] h-[53rem]     flex ">
         <div className="hidden w-5/12  md:inline-block  ">
           <div className="  md:flex md:justify-center h-full items-center flex-col bg-black-rgba ">
             <img className="h-40 w-40 object-contain" src={Logosign} />
@@ -36,8 +36,8 @@ const LoginForm = () => {
           </div>
         </div>
 
-        <div className="md:w-[730px]  h-full relative gap-6 md:gap-0 flex flex-col justify-evenly content-center  px-6 py-8 mx-auto  md:px-32">
-          <div className="md:w-[480px]  object-cover ">
+        <div className="md:w-[45.6rem]  h-full relative gap-6 md:gap-0 flex flex-col justify-evenly content-center  px-6 py-8 mx-auto  md:px-32">
+          <div className="md:w-[30rem]  object-cover ">
             <img
               className="bg-logo-bg w-8  h-9 md:ml-8 rounded-md  p-1 md:mx-auto justify-center   "
               src={Logo}
@@ -45,17 +45,17 @@ const LoginForm = () => {
             />
           </div>
 
-          <div className="md:w-[480px] w-[327px] h-[688px] mx-auto justify-center text-center md:text-left flex flex-col gap-7">
-            <button className="ml-8" onClick={() => setCurrentSection(1)}>
+          <div className="md:w-[30rem] w-[20.5rem] h-[43rem] mx-auto justify-center text-center md:text-left flex flex-col gap-7">
+            <button className="md:ml-8" onClick={() => setCurrentSection(1)}>
               <IoMdArrowBack />
             </button>
             <Header />
             {section}
           </div>
 
-          <div className="flex flex-col md:flex-row  bottom-0  justify-center items-center text-center md:justify-between text-sm gap-2  ">
+          <div className="flex flex-col md:flex-row md:w-[33rem]  mx-auto bottom-0 mt-10 md:mt-0 justify-center items-end text-center tracking-normal md:justify-between text-sm gap-2  ">
             <p className="font-normal text-secondary-header">
-              ©️2024 Pinntag. All rights reserved
+              ©️2024 Pinntag. All rights reserved.
             </p>
             <div className="text-btncolor font-bold relative ">
               <button onClick={() => setCurrentSection(3)}>
